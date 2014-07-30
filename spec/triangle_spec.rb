@@ -8,8 +8,13 @@ describe Triangle do
   end
 
   it 'lets you read side1 out' do
-    test_triangle = Triangle.new(5,5,4)
+    test_triangle = Triangle.new(5,3,4)
     test_triangle.side1.should eq 5
+  end
+
+  it 'lets you read side2 out' do
+    test_triangle = Triangle.new(5,3,4)
+    test_triangle.side2.should eq
   end
 end
 

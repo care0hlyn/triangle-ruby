@@ -8,4 +8,8 @@ class Triangle
   def side1
     @side1
   end
+
+  def side2
+    @side2
+  end
 end
