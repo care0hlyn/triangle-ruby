@@ -16,4 +16,12 @@ class Triangle
   def side3
     @side3
   end
+
+  def type()
+    if (@side1 == @side2) && (@side1 == @side3)
+      return "Equilateral"
+    else
+      return "nada"
+    end
+  end
 end

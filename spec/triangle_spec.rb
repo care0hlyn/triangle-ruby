@@ -21,6 +21,12 @@ describe Triangle do
     test_triangle = Triangle.new(5,3,4)
     test_triangle.side3.should eq 4
   end
+
+  it 'returns equulateral if all sides are equal' do
+    test_triangle = Triangle.new(5,5,5)
+    test_triangle.type().should eq 'Equilateral'
+  end
+
 end
 
 
