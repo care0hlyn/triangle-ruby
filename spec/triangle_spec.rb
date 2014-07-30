@@ -22,11 +22,20 @@ describe Triangle do
     test_triangle.side3.should eq 4
   end
 
-  it 'returns equulateral if all sides are equal' do
+  it 'returns equilateral if all sides are equal' do
     test_triangle = Triangle.new(5,5,5)
     test_triangle.type().should eq 'Equilateral'
   end
 
+  it 'returns isosceles if only two sides are the same' do
+    test_triangle = Triangle.new(5,5,8)
+    test_triangle.type().should eq 'Isosceles'
+  end
+
+  it 'returns scalene if no sides are the same' do
+    test_triangle = Triangle.new(5,6,8)
+    test_triangle.type().should eq 'Scalene'
+  end
 end
 
 
