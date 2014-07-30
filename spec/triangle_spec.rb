@@ -36,6 +36,11 @@ describe Triangle do
     test_triangle = Triangle.new(5,6,8)
     test_triangle.type().should eq 'Scalene'
   end
+
+  it 'checks if the input is a triangle' do
+    test_triangle = Triangle.new(9000,2,4)
+    test_triangle.type().should eq 'Not a valid triangle'
+  end
 end
 
 

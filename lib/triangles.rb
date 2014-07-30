@@ -18,14 +18,14 @@ class Triangle
   end
 
   def type()
-    if (@side1 == @side2) && (@side1 == @side3)
+    if (@side1 + @side2 < @side3) || (@side3 + @side1 < @side2) || (@side3 + @side2 < @side1)
+      return "Not a valid triangle"
+    elsif (@side1 == @side2) && (@side1 == @side3)
       return "Equilateral"
     elsif (@side1 == @side2) || (@side1 == @side3) || (@side2 == @side3)
       return "Isosceles"
-    elsif (@side1 != @side2) && (@side1 != @side3) && (@side2 != @side3)
-      return "Scalene"
     else
-      return "nada"
+      return "Scalene"
     end
   end
 end
