@@ -20,6 +20,8 @@ class Triangle
   def type()
     if (@side1 == @side2) && (@side1 == @side3)
       return "Equilateral"
+    elsif (@side1 == @side2) || (@side1 == @side3) || (@side2 == @side3)
+      return "Isosceles"
     else
       return "nada"
     end
