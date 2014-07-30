@@ -14,7 +14,12 @@ describe Triangle do
 
   it 'lets you read side2 out' do
     test_triangle = Triangle.new(5,3,4)
-    test_triangle.side2.should eq
+    test_triangle.side2.should eq 3
+  end
+
+  it 'lets you read side3 out' do
+    test_triangle = Triangle.new(5,3,4)
+    test_triangle.side3.should eq 4
   end
 end
 

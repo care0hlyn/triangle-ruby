@@ -12,4 +12,8 @@ class Triangle
   def side2
     @side2
   end
+
+  def side3
+    @side3
+  end
 end
