@@ -9,8 +9,8 @@ describe Triangle do
 
   it 'lets you read side1 out' do
     test_triangle = Triangle.new(5,5,4)
-    test_triangle.side1
-
+    test_triangle.side1.should eq 5
+  end
 end
 
 
